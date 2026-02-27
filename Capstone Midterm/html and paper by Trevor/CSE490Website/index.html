@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computer Science Major Assignment</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: #002D62;
+            font-size: 30px;
+        }
+
+        button {
+            margin-top: 5px;
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #002D62;
+            color: #f4f4f4;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .top {
+            height: 80px;
+            width: 100%;
+            background-color: #002D62;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .title {
+            color: #f4f4f4;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tbc {
+            display: flex;
+            gap: 15px;
+        }
+
+        .tb {
+            background-color: #002D62;
+            color: #f4f4f4;
+            border: 2px solid #C5A100;
+            padding: 5px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .tb:hover {
+            background-color: #C5A100;
+            color: #002D62;
+        }
+
+        .bottom {
+            height: 80px;
+            width: 100%;
+            background-color: #002D62;
+            color:#f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            box-sizing: border-box;
+            margin-top: 225px;
+        }
+
+        .bottomleft {
+            font-size: 14px;
+        }
+
+        .bottomright {
+            display: flex;
+            gap: 20px;
+        }
+
+        .bottomright a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .bottomright a:hover {
+            color: #C5A100;
+        }
+
+        .courses {
+            width: 70%;
+            margin: 50px auto;
+        }
+
+        details {
+            background: #f4f4f4;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        details p {
+            margin-top: 10px;
+        }
+
+        details[open] {
+            background: #B7C6DF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <a href="https://www.midway.edu">
+            <img src="midway.jpg" alt="Midway Banner" class="logo">
+        </a>
+        <div class="title">Computer Science Major</div>
+
+        <div class="tbc">
+            <a href="https://ss.midway.edu/Student/Courses">
+                <button class="tb">Other Courses</button></a>
+            <a href="https://midway.elluciancrmrecruit.com/Apply/Account/Login?ReturnUrl=%2fApply">
+                <button class="tb">Apply Now</button></a>
+            <a href="https://www.midway.edu/camps.html">
+                <button class="tb">Visit Campus</button></a>
+            </a>
+        </div>
+    </div>
+
+    <h2>Course List</h2>
+
+    <div class="courses">
+        <details>
+            <summary>CSE-150: Introduction to Computer Science</summary>
+            <p id="cse150">
+                Introduction to Computer Science showcases the major of computer science here at Midway University by
+                giving broad overviews of the computing field. In this class, you can expect to learn general
+                information about a variety of topics, including algorithms, basic programming, software components,
+                networks, data storage methods such as bytes, and possibly even hardware components. This class is
+                beneficial not only for computer science majors but also for those who wish to learn more about
+                computing, as many of the topics covered are transferable to other majors.
+            </p>
+            <button onclick="textToSpeech('cse150')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/nwiysEoPJMo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-200: Computer Programming I</summary>
+            <p id="cse200">Computer Programming I is an introductory course for object-oriented programming languages.
+                Students can expect to learn various programming concepts, data structures, and algorithmic processes,
+                as well as debugging techniques. This course emphasizes structured programming and logical
+                problem-solving, helping
+                students build a coding foundation for future classes.</p>
+            <button onclick="textToSpeech('cse200')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Y8c1IHZs5qc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-210: Computer Programming II</summary>
+            <p id="cse210">Computer Programming II expands upon the knowledge taken from Computer Programming I,
+                introducing more advanced programming concepts such as object-oriented programming (OOP), polymorphism,
+                complex data
+                structures, and more efficient means of problem solving to further students’ development, allowing them
+                to design larger, modular programs and understand how software systems are structured. Prerequisites
+                include having taken CSE-200 with a minimum grade of C.</p>
+            <button onclick="textToSpeech('cse210')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/R2TGEVL_1LI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-250: Database Systems</summary>
+            <p id="cse250">Database Systems is a class that examines the theory and architecture of databases. In this
+                class,students will learn to model data, design databases, write and execute queries, and learn SQL.
+                Upon
+                completion, students will have an effective strategy for manipulating data for future applications.</p>
+            <button onclick="textToSpeech('cse250')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/y03oYWDLu0Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-300: Human Computer Interaction</summary>
+            <p id="cse300">Human Computer Interaction is a course designed to address interactive applications by
+                applying data-driven approaches to real users. Students can expect to learn about design principles,
+                usability,
+                interface design, and accessibility as they pertain to user experience. The goal of this class is for
+                students to focus on usability and user experience when creating future applications.</p>
+            <button onclick="textToSpeech('cse300')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/LscHhkyRnck"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-310: Platform Technologies</summary>
+            <p id="cse310">Platform Technologies will have students focusing on hardware and operating systems for
+                computing platforms. They will learn about operating systems, hardware interaction, virtualization,
+                cloud
+                computing concepts, and system architecture to understand how software interacts with hardware to form
+                the essential components of an IT system.</p>
+            <button onclick="textToSpeech('cse310')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_I8CLQazom0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-320: Networking</summary>
+            <p id="cse320">Networking covers the principles of computer networking, including network architecture,
+                routing, switching, and network security fundamentals, within a distributed computing setting. Students
+                will
+                learn how data travels across networks and how communication between devices is established, maintained,
+                and debugged.</p>
+            <button onclick="textToSpeech('cse320')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ApbOARvYZY4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-400: Cybersecurity</summary>
+            <p id="cse400">Cybersecurity focuses on one of the most critical areas of technology management. Students
+                can expect to learn about protecting systems, encryption, authentication, risk management, threat
+                analysis, security
+                practices, and ethical applications of topics such as hacking. Theories will be discussed and applied in
+                this course, helping students prepare for careers in cybersecurity after graduation.</p>
+            <button onclick="textToSpeech('cse400')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/v8nlTZleKFw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-410: Mobile Computing</summary>
+            <p id="cse410">Mobile Computing is a course designed to teach students how to create and maintain web- and
+                mobile-based applications. Students should be prepared to learn about mobile operating systems, app
+                development
+                frameworks, user interfaces, performance optimization, and additional security concerns across both
+                Android and iOS. Prerequisites include having taken CSE-210 with a minimum grade of C.</p>
+            <button onclick="textToSpeech('cse410')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3GGqpMnKsv4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-420: Emerging Technologies</summary>
+            <p id="cse420">Emerging Technologies is designed to allow students to examine new and evolving technologies
+                in both computer science industry and academia. These technologies are ever-changing, so the topics of
+                this
+                course can change each year depending on what’s gaining importance in the industry, which means that if
+                the topics change, this course is repeatable. As of now, students can look forward to learning about
+                artificial intelligence, machine learning, Internet of Things (IoT), and blockchain.</p>
+            <button onclick="textToSpeech('cse420')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/oWM7fjaiWw0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-490: Capstone</summary>
+            <p id="cse490">Capstone is a culminating class meant to give students a problem by which they will use
+                knowledge from previous courses to build their solution. Students should be prepared to design, develop,
+                and present a
+                comprehensive project, either in a team setting or alone. This class emphasizes project management,
+                collaboration, documentation, and public speaking, preparing students for post-education workplace
+                settings.</p>
+            <button onclick="textToSpeech('cse490')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/XGKroxBlx0I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+
+        <details>
+            <summary>CSE-495: Internship</summary>
+            <p id="cse495">The Internship course is designed to allow students to practically apply classroom knowledge
+                in a field of their choice within computer science to develop skills for professional growth. Students
+                will have to complete 135 hours of relevant field work at an internship of their choosing, alongside
+                scheduled class
+                meetings. Students will be under the supervision of faculty and site supervisors and are expected to
+                turn in weekly progress reports, along with a final presentation or project, showing the culmination of
+                their work throughout the semester. The internship course is graded pass/fail, restricted to Juniors or
+                Seniors, and may be repeated once.</p>
+            <button onclick="textToSpeech('cse495')">🔊</button>
+            <button onclick="stopSpeaking()">⏹</button>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/wPdeF2EnwuM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </details>
+    </div>
+
+    <div class="bottom">
+        <div class="bottomleft">
+            Computer Science Courses Project for CSE-490 by Trevor Alexander
+        </div>
+
+        <div class="bottomright">
+            <a href="https://www.midway.edu">Midway Website</a>
+            <a href="mailto:admissions@midway.edu">Contact</a>
+            <a href="#">Back to Top</a>
+        </div>
+    </div>
+
+    <script>
+        function textToSpeech(id) {
+            const text = document.getElementById(id).innerText;
+
+            const speech = new SpeechSynthesisUtterance(text);
+
+            speech.rate = 1;
+            speech.pitch = 1;
+            speech.volume = 1;
+            window.speechSynthesis.speak(speech);
+        }
+
+        function stopSpeaking() {
+            window.speechSynthesis.cancel();
+
+        }
+    </script>
+</body>
+
+</html>
